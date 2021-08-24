@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container-coloumn card">
+        <div class="display">
+            <h1 id="displayNumber">0</h1>
+        </div>
+        <div class="flex-container-row">
+            <div class="tombol">7</div>
+            <div class="tombol">8</div>
+            <div class="tombol">9</div>
+            <div class="tombol negative">+/-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="tombol">4</div>
+            <div class="tombol">5</div>
+            <div class="tombol">6</div>
+            <div class="tombol operator">-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="tombol">1</div>
+            <div class="tombol">2</div>
+            <div class="tombol">3</div>
+            <div class="tombol operator">+</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="tombol clear">CE</div>
+            <div class="tombol">0</div>
+            <div class="tombol equals double">=</div>
+        </div>
+    </div>
+
+    <div class="history card">
+        <h2>Riwayat Perhitungan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Angka Pertama</th>
+                    <th>Operator</th>
+                    <th>Angka Kedua</th>
+                    <th>Hasil</th>
+                </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+        </table>
+    </div>
+    
+    <script src="storage.js"></script>
+    <script src="kalkulator.js"></script>
+</body>
+</html>

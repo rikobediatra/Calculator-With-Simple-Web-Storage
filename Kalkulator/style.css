@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;    
+}
+
+.flex-container-coloumn{
+    display: flex;
+    flex-direction: column;
+
+    /*Properti pendukung*/
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row{
+    display: flex;
+}
+
+.tombol{
+    flex-basis: 25%;
+
+    /*Properti pendukung*/
+    font-size: 1.53em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #000;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+}
+
+.double{
+    flex-basis: 50%;
+}
+
+.display{
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    font-size: 2em;
+}
+
+.negative,
+.operator,
+.equals{
+    background: orange;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.tombol:hover{
+    font-weight: bold;
+}
+
+@media (max-width: 513px) {
+    .tombol{
+        padding: 10px;
+    }
+}
+
+/* history kalkulator */
+.history{
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+
+}
+
+th,
+td{
+    text-align: center;
+    padding: 16px;
+}
+
+th{
+    background-color: orange;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #d2d2d2;
+}
+
+@media screen and (max-width: 513px) {
+    .button{
+        padding: 10px;
+    }
+
+    .history{
+        width: 100%;
+    }
+}
